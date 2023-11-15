@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fjalla+One&family=Indie+Flower&family=Rubik+Pixels&family=Sedgwick+Ave+Display&display=swap');
 
+body {
+    display: flex;
+    justify-content: center;
+}
+
 .wrap {
     width: 1400px;
     height: 500px;

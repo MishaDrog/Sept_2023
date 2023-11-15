@@ -1,0 +1,60 @@
+
+
+
+body {
+    margin: 0;
+    font-family: 'Arial';
+}
+
+h2{
+    margin: 0;
+    text-align: center;
+    align-items: center;
+
+}
+
+.header {
+    width: 100vw;
+    height: 20vh;
+    background-color: silver;
+}
+
+.main {
+    display: flex;
+}
+
+.news-section {
+    width: 20vw;
+    height: 50vh;
+    background-color: #544F4F;
+
+}
+
+.content1-2-section {
+    max-width: 60vw;
+    max-height: 50vh;
+    background-color: #817B7B;
+
+}
+
+.content1, .content2 {
+    width: 60vw;
+    height: 25vh;
+ 
+
+}
+
+
+
+.sponsor-section {
+    width: 20vw;
+    height: 50vh;
+    background-color: #544F4F;
+}
+
+.footer {
+    width: 100vw;
+    height: 20vh;
+    background-color: silver;
+
+}

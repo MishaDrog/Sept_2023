@@ -1,0 +1,36 @@
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
+.section1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: tomato;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 200px;
+}
+
+.section2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #00d9ff;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 200px;
+}
+
+.section3 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2ad42d;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 200px;
+}
