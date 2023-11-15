@@ -61,8 +61,8 @@ body{
 /* Стилізація елементів сторінки */
 
 .header{
-    border: 1px solid black;
     height: 20vh;
+    background-color: #FFFFFF;
 }
 
 .logo>a>img{
@@ -81,7 +81,7 @@ body{
 .nav-list>li>a{
     display: flex;
     color: #99A2AA;
-    font-family: Rubik;
+    font-family: 'Rubik';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -90,6 +90,14 @@ body{
     list-style: none;
     text-decoration: none;
     padding-right: 15px;
+    transition: 1ms;
+}
+
+.nav-list>li>a:hover {
+    color: black;
+
+    transition: 0.7ms;
+    transform: scale(1.1);
 }
 
 /* _____________tabpanel-section______________ */
@@ -126,27 +134,21 @@ body{
     padding-top: 40px;
 }
 
-.form {
-    width: 570px;
-    height: 72px;
-    border-radius: 5px;
-    background-color: white;
-    border: 1px solid black;
-}
+.address-input {
+    width: 572px;
+    height: 80px;
+    border-radius: 10px;
+    border: 1px solid #E8EBEE;
+    background: #FFF;
 
-input.address-input {
-    width: 232px;
-    height: 19px;
-    color: #757575;
-    font-family: Rubik;
+    color: #6C757D;
+    font-family: 'Rubik';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
+    letter-spacing: 0.5px;
     padding-left: 30px;
-    text-align: center;
-    align-items: center;
 }
 
 .container {
@@ -154,25 +156,28 @@ input.address-input {
     bottom: -50px;
 }
 
-.link-button {
+.cont-link {
     width: 272px;
     height: 80px;
     background-color: white;
     border-radius: 5px;
-    border: 1px solid black;
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
-
-}
-li.link-button>svg {
-    display: block;
-    margin: 22px 50px 50px 50px;
-    bottom: -10px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
+    justify-content: space-evenly;
     align-items: center;
+    color: #99A2AA;
+    text-align: center;
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    border-radius: 10px;
+}
+.cont-link:hover{
+    color: black;
+    border: 3px solid black;
+    transform: scale(1.1);
 }
 
 ul.container-links{
@@ -187,6 +192,7 @@ ul.container-links{
 /* _____________services-section______________ */
 .services-section {
     height: 700px;
+    background-color: #F8F8F8;;
 }
 .services__container {
     display: flex;
@@ -254,7 +260,7 @@ ul.container-links{
     display: flex;
     flex-wrap: wrap;
 }
-/* _____________services-section______________ */
+/* _____________business-section______________ */
 .business-section {
     height: 660px;
     background-color: #042C4B;
@@ -297,7 +303,12 @@ ul.container-links{
     font-weight: 700;
     line-height: 80px;
 }
-/* _____________services-section______________ */
+/* _____________finance-section______________ */
+
+.finance-section {
+    background-color: #F8F8F8;
+    height: 880px;
+}
 
 .fin-help-block h4{
     color: #0E2F4B;
@@ -321,29 +332,28 @@ ul.container-links{
 
 .fin-help-block>p.details {
     color: #0E2F4B;
-    font-family: Rubik;
+    font-family: 'Rubik';
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
     padding-top: 10px;
+}
 
+.finance_block {
+    padding-top: 100px;
 }
 
 .finance_block>h2{
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
-
 .fin-help-block {
-
     background-color: #FDC13D;
     width: 1170px;
     height: 220px;
-    border-radius: 3px;
-    margin-top: 100px;
+    border-radius: 10px;
 }
-
 
 .fin_list_block {
     margin-top: 50px;
@@ -600,7 +610,7 @@ ul.container-links{
     display: flex;
     justify-content: space-evenly;
     width: 75vw;
-    height: 70vh;
+    height: 75vh;
     border-bottom: 1px solid #99A2AA;
 }
 .content-block {
@@ -610,7 +620,7 @@ ul.container-links{
 }
 .content-block h6 {
     color: #FFF;
-    font-family: Rubik;
+    font-family: 'Rubik';
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -618,9 +628,7 @@ ul.container-links{
     margin-bottom: 10px;
 }
 .footer-lists>li>a {
-
     color: #99A2AA;
-
     font-family: 'Rubik';
     font-size: 16px;
     font-style: normal;
