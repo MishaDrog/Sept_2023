@@ -54,10 +54,6 @@ body{
     padding: 0px 15px;
 }
 
-
-
-
-
 /* Стилізація елементів сторінки */
 
 .header{
@@ -90,14 +86,13 @@ body{
     list-style: none;
     text-decoration: none;
     padding-right: 15px;
-    transition: 1ms;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-list>li>a:hover {
     color: black;
-
-    transition: 0.7ms;
-    transform: scale(1.1);
+    transition: 0.4s;
+    transform: scale(1.2);
 }
 
 /* _____________tabpanel-section______________ */
@@ -140,7 +135,6 @@ body{
     border-radius: 10px;
     border: 1px solid #E8EBEE;
     background: #FFF;
-
     color: #6C757D;
     font-family: 'Rubik';
     font-size: 16px;
@@ -173,10 +167,11 @@ body{
     font-weight: 700;
     line-height: 20px;
     border-radius: 10px;
+    transition: all 0.3s ease-in-out;
 }
 .cont-link:hover{
-    color: black;
-    border: 3px solid black;
+    color: #0E2F4B;;
+    border: 1px solid #0E2F4B;;
     transform: scale(1.1);
 }
 
@@ -302,7 +297,15 @@ ul.container-links{
     font-style: normal;
     font-weight: 700;
     line-height: 80px;
+    transition: all 0.3s ease-in-out;
 }
+
+.business_block>a.business_link:hover {
+    color: #0E2F4B;
+    border: 1px solid #0E2F4B;
+    transform: scale(1.1);
+}
+
 /* _____________finance-section______________ */
 
 .finance-section {
@@ -396,7 +399,7 @@ ul.container-links{
 
 .post-index-section{
     height: 635px;
-    background-color: #0E2F4B;;
+    background-color: #0E2F4B;
 }
 .index_block>h2.h2-white {
     padding-top: 140px;
@@ -418,9 +421,7 @@ ul.container-links{
     border-radius: 10px;
     border: 1px solid #E8EBEE;
     background: #FFF;
-
     color: #6C757D;
-
     font-family: Rubik;
     font-size: 16px;
     font-style: normal;
@@ -446,9 +447,14 @@ ul.container-links{
 
     color: #0E2F4B;
     font-weight: 700;
-    font-family: Rubik;
+    font-family: 'Rubik';
     font-size: 20px;
-
+    transition: all 0.3s ease-in-out;
+}
+.index-button:hover {
+    color: #0E2F4B;
+    border: 1px solid #0E2F4B;
+    transform: scale(1.1);
 }
 
 /* _____________news-section______________ */
@@ -466,7 +472,6 @@ ul.container-links{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 .news_block>h2 {
     margin-top: 100px;
@@ -492,7 +497,7 @@ ul.container-links{
 
 .news-card>p {
     color: #0E2F4B;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -528,10 +533,7 @@ ul.container-links{
 .info_ul {
     display: flex;
     flex-wrap: wrap;
-
     justify-content: space-between;
-
-
 }
 
 .info_list_item>a {
@@ -550,6 +552,12 @@ ul.container-links{
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
+    transition: all 0.3s ease-in-out;
+}
+.info_list_item>a:hover {
+    color: #0E2F4B;;
+    border: 1px solid #0E2F4B;
+    transform: scale(1.1);
 }
 
 
@@ -601,6 +609,7 @@ ul.container-links{
     margin-right: 20px;
 }
 
+/* _____________footer-section______________ */
 .footer {
     height: 90vh;
     background-color: #1D2023;;
@@ -634,4 +643,10 @@ ul.container-links{
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    transition: all 0.3s ease-in-out;
 }
+.footer-lists>li>a:hover {
+    color: #FFFFFF;;
+    transform: scale(1.1);
+}
+
