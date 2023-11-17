@@ -1,8 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fjalla+One&family=Indie+Flower&family=Open+Sans:wght@300;400;500&family=Rubik+Pixels&family=Rubik:wght@300;400;500;600;700&family=Sedgwick+Ave+Display&display=swap');
 
-/*скидаємо усі стилі в документі  - обнулення*/
-
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -43,14 +41,13 @@ body{
     min-height: 100%;
     overflow: hidden;
     display: flex;
-    flex-direction: column;  /* Притискаємо футер до низу сторінки */
+    flex-direction: column;
 }
 
 .page {
     flex: 1 1 auto;
 }
 
-/* Обмежуючий контейнер */
 [class*="__container"]{
     max-width: 1200px;
     margin: 0 auto;
