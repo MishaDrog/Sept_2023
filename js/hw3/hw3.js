@@ -31,7 +31,7 @@ let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'an
 for (let i = 0; i < listOfItems.length; i++) {
     const listOfItem = listOfItems[i];
     console.log(listOfItems[i]);
-    document.write(`<ul> <li> ${listOfItems[i]} </li> </ul>`)
+    document.write(`<ul class="arr-items"> <li> ${listOfItems[i]} </li> </ul>`)
 
 }
 
@@ -62,6 +62,11 @@ for (let i = 0; i < listOfItems.length; i++) {
 побудувати структуру по шаблону
 Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
 
+ // ШАБЛОН
+
+// Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
+*/
+
 let products = [
     {
         title: 'milk',
@@ -85,17 +90,19 @@ let products = [
     },
 ];
 
-ШАБЛОН
-<div class="product-card">
-    <h3 class="product-title">TITLE. Price - PRICE</h3>
-<img src="IMAGE" alt="" class="product-image">
-</div>
-Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
-*/
 
-/*
---------------------
-    є масив
+for (let i = 0; i < products.length; i++) {
+    const product = products[i];
+    document.write(` <div class="product-card">
+    <h3 class="product-title">${product.title} Price - ${product.price}</h3>
+<img class="product-image" src="${product.image}" alt="products image" >
+</div> `)
+
+}
+
+
+
+
 let users = [
     {name: 'vasya', age: 31, status: false},
     {name: 'petya', age: 30, status: true},
@@ -109,10 +116,24 @@ let users = [
     {name: 'olya', age: 31, status: false},
     {name: 'max', age: 31, status: true}
 ];
+
+for (const user of users) {
+
+    const userAge = user.age;
+    if ( userAge>30) {
+        console.log(userAge);
+        document.write(`user --- ${userAge}`)
+
+    }
+
+}
+
+/*
+
+є масив users
 за допомоги циклу вивести:
     - користувачів зі статусом true
 - користувачів зі статусом false
 - користувачів які старші за 30 років
-
 
  */

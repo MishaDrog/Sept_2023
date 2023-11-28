@@ -1,0 +1,47 @@
+
+.arr-items {
+    list-style: none;
+    background-color: #ffd500;
+    width: 20vh;
+    font-family: "Open Sans";
+    font-size: 20px;
+    border: 1px solid black;
+
+}
+
+
+
+/*________products_________*/
+
+.product-card {
+    width: 400px;
+    height: 400px;
+    background-color: silver;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 20px;
+
+
+}
+
+.product-title {
+    text-align: center;
+    align-items: center;
+}
+.product-image {
+    width: 300px;
+}
+.product-title .product-image {
+    display: inline-block;
+
+}
+.product-card>img {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+
+}
