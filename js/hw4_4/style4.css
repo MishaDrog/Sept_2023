@@ -1,0 +1,21 @@
+
+
+.player-block {
+    background-color: #ffd500;
+    width: 300px;
+    color: #2f5ae5;
+    font-family: "Open Sans";
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.player-block:hover {
+    font-size: larger;
+    margin: 5px 0;
+    transition: 0.7s;
+    border: 1px solid #2f5ae5;
+
+}

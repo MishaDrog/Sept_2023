@@ -1,0 +1,10 @@
+
+
+.player-block {
+    background-color: #ffd500;
+    width: 300px;
+    color: #2f5ae5;
+    font-family: "Open Sans";
+    display: flex;
+
+}
