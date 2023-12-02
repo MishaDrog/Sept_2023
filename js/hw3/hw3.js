@@ -118,12 +118,8 @@ let users = [
 ];
 
 for (const user of users) {
-
-    const userAge = user.age;
-    if ( userAge>30) {
-        console.log(userAge);
-        document.write(`user --- ${userAge}`)
-
+    if (user.age>30) {
+        document.write(`<div> ${user.name} --- ${user.age} --- ${user.status} </div>`)
     }
 
 }
