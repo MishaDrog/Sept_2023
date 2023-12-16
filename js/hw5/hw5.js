@@ -71,14 +71,42 @@ const fnArr = function (arr) {
 
 fnArr(footballPlayers);
 
+
+
+const Logger = (arr) => {
+    for (const item of arr) {
+        console.log('item : ', item);
+
+    }
+}
+
+Logger ([23,43,'qwe', 0, null]);
+
 /*
 - створити функцію яка створює параграф з текстом. Текст задати через аргумент
  */
+
+function createPar (text) {
+    document.write(`<p>${text}</p>`)
+
+}
+createPar('bulshit is mf');
 
 /*
 - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
  */
 
+let createUl = function (text) {
+    document.write(`
+        <ul>
+            <li>${text}</li>
+            <li>${text}</li>
+            <li>${text}</li>
+        </ul>
+    `);
+
+};
+createUl('laino')
 
 /*
 - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
@@ -86,30 +114,102 @@ fnArr(footballPlayers);
  */
 
 
+let createUl2 = function (text, count) {
+    document.write(`<ul>`)
+        for (let i =0; i < count; i +=1 ) {
+            document.write(`<li>${text}</li>`);
+        }
+    document.write(`</ul>`);
+
+
+};
+createUl2('laino function2', 7);
+
+
 /*
 - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
  */
+
+function createElements(arr) {
+    document.write(`<ul>`)
+
+    for (const item of arr) {
+        document.write(`<li>${item}<li>`);
+    }
+
+    document.write(`</ul>`);
+}
+
+createElements(['123qwe', 23, true, false, 'Ronaldo']);
 
 /*
 - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
 Для кожного об'єкту окремий блок.
  */
 
+function arrObj(arr) {
+    for (const item of arr) {
+
+        document.write(`<div>${item.id} - ${item.name} - ${item.age} - ${item.status}</div>`)
+    }
+
+}
+
+arrObj(footballPlayers);
 
 /*
 - створити функцію яка повертає найменьше число з масиву
  */
+
+const arr = [64, 7786, 34, 4, 43, -23987652, 0, 1234, 9999];
+
+
+const minNumbersArr = function (arr) {
+    let min = arr[0];
+
+    for (let i=1; i < arr.length; i +=1) {
+        if (min > arr[i]) {
+            min = arr[i]
+        }
+    }
+    return min;
+}
+
+console.log(minNumbersArr(arr));
 
 /*
 - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його.
  Приклад sum([1,2,10]) //->13
  */
 
+function sumNumber(arr) {
+    let result = 0;
+
+    for (const num of arr) {
+        result += num;
+
+    }
+    return result;
+}
+
+console.log(sumNumber([29,10,5]));
+
+
 /*
 - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
 Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
  */
 
+function swap(arr, index1, index2) {
+    const num1 = arr[index1];
+
+    arr[index1] = arr[index2];
+    arr[index2] = num1;
+
+    return arr;
+}
+
+console.log(swap([11,22,33,44], 0, 2));
 
 /*
 - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
@@ -117,3 +217,17 @@ fnArr(footballPlayers);
  */
 
 
+function exchange(sumUAH, currencyValues, exchangeCurrency) {
+    for (const currency of currencyValues) {
+        if (currency.currency === exchangeCurrency) {
+            return sumUAH / currency.value
+        }
+    }
+}
+
+
+const currencies = [{currency: 'USD', value: 40},
+    {currency: 'EUR', value: 42}];
+
+console.log(exchange(10000, currencies, 'USD'));
+console.log(exchange(10000, currencies, 'EUR'));
